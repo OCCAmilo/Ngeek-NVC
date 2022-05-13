@@ -1,6 +1,3 @@
-# Ngeek-NVC
-PandoraFMS deploy in kubernetes
-
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 Datos para el despliegue en GCP
 
@@ -121,6 +118,17 @@ $ kubectl port-forward svc/pandora 8080:8080
 
 - acceder al puesto 8080 del shell y añadir /pandora_console/ a la URL
 
+///////////////////////////////////////////////////////////////////////////////////////////
+RECURSOS DE PODS Y NODES
+-> fg //para regresar a un proceso pausado con cntrl+z
+-> minikube start --extra-config=kubelet.housekeeping-interval=10s // para que el top sirva con los pods
+-> kubectl top pods //para ver el CPU y la Memoria consumida de cada pod
+-> kubectl top nodes //para ver el CPU y la Memoria consumida de cada node
 
+
+
+- Si se requiere crear el proyecto en un namespace especifico entonces: (v3)
+$ kubectl apply -f manifiestos/
+$ kubectl apply --namespace pandora -f manifiestos/k8s/
 
 
