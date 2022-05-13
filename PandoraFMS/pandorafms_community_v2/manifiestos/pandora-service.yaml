@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    kompose.cmd: kompose convert -f docker-compose.yml
+    kompose.version: 1.26.1 (a9d05d509)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: pandora
+  name: pandora
+spec:
+  ports:
+    - name: "8080"
+      port: 8080
+      targetPort: 80
+    - name: "41121"
+      port: 41121
+      targetPort: 41121
+    - name: "162"
+      port: 162
+      protocol: UDP
+      targetPort: 162
+  selector:
+    io.kompose.service: pandora
+status:
+  loadBalancer: {}
