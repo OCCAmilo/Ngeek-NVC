@@ -1,16 +1,15 @@
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-Datos para el despliegue en GCP
+#Datos para el despliegue de PandoraFMS en Google Cloud
 
-1. *Cuenta de Gmail: ngeek.nvc@gmail.com *Pass: Qazplm123.
+1. Cuenta de Gmail: ngeek.nvc@gmail.com *Pass: Qazplm123.
 
 2. Ingresar a la cuenta y configurar una credit card
 
 3. ingrese a GCP con la cuanta de gmail 
 
 4. Crea un proyecto nuevo y activa el cloud shell 
-# Project name: Ngeek-NVC
-# Project number: 904729239195
-# Proejct ID: ngeek-nvc
+- Project name: Ngeek-NVC
+- Project number: 904729239195
+- Proejct ID: ngeek-nvc
 
 5. Estando en el shell siga los siguientes pasos
 
@@ -94,8 +93,8 @@ volumes:
   mysql:
 
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-# ctrl + x 
-# y + intro
+- ctrl + x 
+- y + intro
 
 - compila el kompose 
 $ kompose convert -f docker-compose.yml
